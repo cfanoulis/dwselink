@@ -9,7 +9,7 @@ const LandingPage = () => {
 				/* you should un-comment description and add a unique description, 155 characters or less
 				You can look at this documentation for best practices : https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets */
 			/>
-			<div className="flex flex-col items-center justify-center w-screen h-screen bg-blue-50">
+			<div className="flex flex-col items-center justify-center w-screen h-screen bg-blue-50 p-2 text-center">
 				<h1 className="text-2xl font-extrabold">
 					Ωπ, γειά σου!{' '}
 					<span role="img" aria-label="Waving Emoji">

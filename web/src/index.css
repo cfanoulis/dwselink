@@ -11,10 +11,3 @@
 /**
  * END --- TAILWIND GENERATOR EDIT
  */
-
-@layer base {
-  html, body {
-    @apply h-screen w-screen;
-  }
-}
-

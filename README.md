@@ -2,10 +2,12 @@
 
 Ημερολογιο πρόγραμμα - προαρμοσμένο σε μία τηλε-εκπαιδευτική πραγματικότητα
 Δηλαδή? Ενα ρολόι τάξης - πότε είναι το επόμενο μάθημα, ποιος είναι ο σύνδεσμος, σε πόση ώρα είνια αυτο το καταραμένο διάλειμμα!
+
 ## Getting Started
-- [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
-- [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
-- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
+
+-   [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
+-   [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
+-   [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
 
 ### Setup
 

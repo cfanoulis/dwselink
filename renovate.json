@@ -16,5 +16,12 @@
 			"automerge": true
 		}
 	],
-	"dependencyDashboard": true
+	"dependencyDashboard": true,
+	"baseBranches": ["development"],
+	"timezone": "Europe/Athens",
+	"schedule": ["after 14:30 every weekday", "every weekend"],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true
+	}
 }

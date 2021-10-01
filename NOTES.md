@@ -1,9 +1,8 @@
 wbx protocol: https://www.ketianyun.com/Private/Files/20201124/6374181121156451692724729.pdf
 basically:
-wbx://servername/sitename/MK=&[MPW=]&[RP=]&[UN=]&[SK=]&[STY=]  (obviously URLenc)
+wbx://servername/sitename/MK=&[MPW=]&[RP=]&[UN=]&[SK=]&[STY=] (obviously URLenc)
 
 MK: meeting number
-
 
 webexteams://meet?sip=schusername@minedu-secondary2.webex.com
 

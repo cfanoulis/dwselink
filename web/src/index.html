@@ -13,13 +13,10 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2G62KPZM7L"></script>
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+		import galite from 'ga-lite';
 
-			gtag('config', 'G-2G62KPZM7L');
+		galite('create', 'UA-209061108-1', 'auto');
+		galite('send', 'pageview');
 		</script>
 	</head>
 

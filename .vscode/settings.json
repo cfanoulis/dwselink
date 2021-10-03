@@ -1,8 +1,8 @@
 {
-  "editor.tabSize": 4,
-  "files.trimTrailingWhitespace": true,
-  "editor.formatOnSave": false,
-  "[prisma]": {
-    "editor.formatOnSave": true
-  }
+	"editor.tabSize": 4,
+	"files.trimTrailingWhitespace": true,
+	"editor.formatOnSave": true,
+	"[prisma]": {
+		"editor.formatOnSave": true
+	}
 }

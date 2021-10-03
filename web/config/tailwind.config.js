@@ -5,7 +5,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				techno: ['Press Start 2P', 'sans-serif']
+				techno: ['"Press Start 2P"', 'sans-serif']
 			}
 		},
 		fontFamily: {

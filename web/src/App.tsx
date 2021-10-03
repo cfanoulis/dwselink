@@ -6,13 +6,12 @@ import Routes from 'src/Routes';
 
 import './index.css';
 
-
 const App = () => (
 	<FatalErrorBoundary page={FatalErrorPage}>
 		<RedwoodProvider titleTemplate="%AppTitle">
-				<RedwoodApolloProvider>
-					<Routes />
-				</RedwoodApolloProvider>
+			<RedwoodApolloProvider>
+				<Routes />
+			</RedwoodApolloProvider>
 		</RedwoodProvider>
 	</FatalErrorBoundary>
 );

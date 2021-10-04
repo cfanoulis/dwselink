@@ -11,11 +11,11 @@ const NowStudyingPage = () => {
 	useInterval(() => {
 		time++;
 		setTimeRemaining(timeRemaining - time);
-	},1000)
+	}, 1000);
 
 	useEffect(() => {
 		if (timeRemaining === 0) window.location.reload(false);
-	})
+	});
 
 	return (
 		<>

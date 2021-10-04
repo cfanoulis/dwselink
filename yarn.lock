@@ -2839,7 +2839,7 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sapphire/prettier-config@^1.1.6":
+"@sapphire/prettier-config@1.1.6":
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.1.6.tgz#7e0ebd4241b9f4eba7d6ab33639ea2a7f5ba519a"
   integrity sha512-+xM4Fv1WbWCAMa2mOMUhPC+06FNT4fxkJ6K56pLQQyt1Uc3lKEWjDGvCZZciVW2D+wdSJNuSsHSpn6TkZUmMIg==
@@ -5429,7 +5429,7 @@ auto-bind@~4.0.0:
   resolved "https://registry.yarnpkg.com/auto-bind/-/auto-bind-4.0.0.tgz#e3589fc6c2da8f7ca43ba9f84fa52a744fc997fb"
   integrity sha512-Hdw8qdNiqdJ8LqT0iK0sVzkFbzg6fhnQqqfWhBDxcHZvU75+B+ayzTy8x+k5Ix0Y92XOhOUlx74ps+bA6BeYMQ==
 
-autoprefixer@^10.3.6:
+autoprefixer@10.3.6:
   version "10.3.6"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.3.6.tgz#537c8a046e32ec46bfe528bcc9e2a5f2d87cd4c4"
   integrity sha512-3bDjTfF0MfZntwVCSd18XAT2Zndufh3Mep+mafbzdIQEeWbncVRUVDjH8/EPANV9Hq40seJ24QcYAyhUsFz7gQ==
@@ -9249,7 +9249,7 @@ fuse.js@^3.6.1:
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.6.1.tgz#7de85fdd6e1b3377c23ce010892656385fd9b10c"
   integrity sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==
 
-ga-lite@^2.1.0:
+ga-lite@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ga-lite/-/ga-lite-2.1.0.tgz#ce92abfbc54bdf541257055ddbc8ed7461e3cd05"
   integrity sha512-GR9on+Nm7QuNzJU71VqHpGlYvGQfDq5l6Za8IYq8QnnmPWf8f3AVHkmtaRMLamCdHxTbu2gsSAP9srOqW3MuNQ==
@@ -13755,6 +13755,15 @@ postcss-load-config@^3.1.0:
     lilconfig "^2.0.3"
     yaml "^1.10.2"
 
+postcss-loader@6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-6.1.1.tgz#58dd0a3accd9bc87cc52eff75244db578d11301a"
+  integrity sha512-lBmJMvRh1D40dqpWKr9Rpygwxn8M74U9uaCSeYGNKLGInbk9mXBt1ultHf2dH9Ghk6Ue4UXlXWwGMH9QdUJ5ug==
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.4"
+    semver "^7.3.5"
+
 postcss-loader@^4.2.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-4.3.0.tgz#2c4de9657cd4f07af5ab42bd60a673004da1b8cc"
@@ -13765,15 +13774,6 @@ postcss-loader@^4.2.0:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
     semver "^7.3.4"
-
-postcss-loader@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-6.1.1.tgz#58dd0a3accd9bc87cc52eff75244db578d11301a"
-  integrity sha512-lBmJMvRh1D40dqpWKr9Rpygwxn8M74U9uaCSeYGNKLGInbk9mXBt1ultHf2dH9Ghk6Ue4UXlXWwGMH9QdUJ5ug==
-  dependencies:
-    cosmiconfig "^7.0.0"
-    klona "^2.0.4"
-    semver "^7.3.5"
 
 postcss-merge-longhand@^5.0.2:
   version "5.0.2"
@@ -14024,15 +14024,7 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.36, postcss@^7.0.5, postcss@^7.0.6:
-  version "7.0.38"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.38.tgz#5365a9c5126643d977046ad239f60eadda2491d6"
-  integrity sha512-wNrSHWjHDQJR/IZL5IKGxRtFgrYNaAA/UrkW2WqbtZO6uxSLMxMN+s2iqUMwnAWm3fMROlDYZB41dr0Mt7vBwQ==
-  dependencies:
-    nanocolors "^0.2.2"
-    source-map "^0.6.1"
-
-postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.3.5, postcss@^8.3.8:
+postcss@8.3.8, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.3.5:
   version "8.3.8"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.8.tgz#9ebe2a127396b4b4570ae9f7770e7fb83db2bac1"
   integrity sha512-GT5bTjjZnwDifajzczOC+r3FI3Cu+PgPvrsjhQdRqa2kTJ4968/X9CUce9xttIB0xOs5c6xf0TCWZo/y9lF6bA==
@@ -14040,6 +14032,14 @@ postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.3.5, postcss@^8.3.8:
     nanocolors "^0.2.2"
     nanoid "^3.1.25"
     source-map-js "^0.6.2"
+
+postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.36, postcss@^7.0.5, postcss@^7.0.6:
+  version "7.0.38"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.38.tgz#5365a9c5126643d977046ad239f60eadda2491d6"
+  integrity sha512-wNrSHWjHDQJR/IZL5IKGxRtFgrYNaAA/UrkW2WqbtZO6uxSLMxMN+s2iqUMwnAWm3fMROlDYZB41dr0Mt7vBwQ==
+  dependencies:
+    nanocolors "^0.2.2"
+    source-map "^0.6.1"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
@@ -16177,7 +16177,7 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tailwindcss@^2.2.16:
+tailwindcss@2.2.16:
   version "2.2.16"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.16.tgz#32f81bdf1758b639cb83b9d30bf7cbecdda49e5e"
   integrity sha512-EireCtpQyyJ4Xz8NYzHafBoy4baCOO96flM0+HgtsFcIQ9KFy/YBK3GEtlnD+rXen0e4xm8t3WiUcKBJmN6yjg==

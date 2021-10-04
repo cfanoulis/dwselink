@@ -9249,11 +9249,6 @@ fuse.js@^3.6.1:
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.6.1.tgz#7de85fdd6e1b3377c23ce010892656385fd9b10c"
   integrity sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==
 
-ga-lite@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ga-lite/-/ga-lite-2.1.0.tgz#ce92abfbc54bdf541257055ddbc8ed7461e3cd05"
-  integrity sha512-GR9on+Nm7QuNzJU71VqHpGlYvGQfDq5l6Za8IYq8QnnmPWf8f3AVHkmtaRMLamCdHxTbu2gsSAP9srOqW3MuNQ==
-
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"

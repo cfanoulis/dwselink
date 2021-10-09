@@ -2328,7 +2328,7 @@
     youch "2.2.2"
     youch-terminal "1.1.1"
 
-"@redwoodjs/api@0.37.4", "@redwoodjs/api@^0.37.4":
+"@redwoodjs/api@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.37.4.tgz#b3bcadf6b840126b69d5a3b99b6c1c7113577a68"
   integrity sha512-XWOsKvDhIOEoySrNXfZSzsqfk52+ahI/hQ6rlcbA8G/oEX8Qfu0HXylUo1uDhDB3Jb3lNpWMZlVMTl9k0zWDHw==
@@ -2343,7 +2343,7 @@
     pino-pretty "5.1.3"
     uuid "8.3.2"
 
-"@redwoodjs/auth@0.37.4", "@redwoodjs/auth@^0.37.4":
+"@redwoodjs/auth@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.37.4.tgz#2318e000557db24666748f290e2bd4ae5826fc08"
   integrity sha512-LRqPTb7ytrmXmb1flOWFGxe0sIZdAJFXjJ1fNbxBNdZ9ObhonjsPqH/aquj/HHO7a+KiZkMMMeP/+lVRD6YUvw==
@@ -2386,7 +2386,7 @@
     terminal-link "2.1.1"
     yargs "16.2.0"
 
-"@redwoodjs/core@^0.37.4":
+"@redwoodjs/core@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.37.4.tgz#88bc81c194803d5d8011e5ba3da764ac5c9d3b05"
   integrity sha512-giB0dT4MfxKQIXbBKqbN7eI/NJ07ZHLI5fJ6sFogaYuWc4ifwqN6441dyLlQG2QpTHPxukhEwuFcv01O3TzENQ==
@@ -2467,7 +2467,7 @@
     eslint-plugin-react-hooks "4.2.0"
     prettier "2.4.1"
 
-"@redwoodjs/forms@^0.37.4":
+"@redwoodjs/forms@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/forms/-/forms-0.37.4.tgz#2d659d4847cdce550c450b165331ea5318f0f682"
   integrity sha512-SWUun7bndieAkLBCm7BzEY1R6fWtSoqzshec3IJLiCLuvvT6BjNhcaz+NmNZsVx84knFkYKNQkvBxrf7P4IVfg==
@@ -2554,7 +2554,7 @@
     cheerio "1.0.0-rc.10"
     node-fetch "2.6.1"
 
-"@redwoodjs/router@0.37.4", "@redwoodjs/router@^0.37.4":
+"@redwoodjs/router@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.37.4.tgz#7259e2425fd6217986dbecebd963fc41856cbf7d"
   integrity sha512-3okAAV3OXOO/+RuyFk8n9A0F+eMfVyWfCCnWb6f9J4fdsinVy9uQA5hkjd7MMXz1g5noABOl36/uAVr2t7en7w==
@@ -2621,7 +2621,7 @@
     ts-toolbelt "9.6.0"
     whatwg-fetch "3.6.2"
 
-"@redwoodjs/web@0.37.4", "@redwoodjs/web@^0.37.4":
+"@redwoodjs/web@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.37.4.tgz#e8d0b0465085dcfb8a3b0aa460dd7325fd44666a"
   integrity sha512-A98XmWi5Pwsyi6/QCf4p6RtQJaZ2OZorCRjlfKgZP/koez/q9VQmHVBvGC34/tHWZLAtRN+dDqJA5Xvmed4qBQ==

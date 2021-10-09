@@ -1,8 +1,11 @@
 {
-	"name": "api",
-	"version": "0.0.0",
-	"private": true,
-	"dependencies": {
-		"@redwoodjs/api": "^0.37.1"
-	}
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@redwoodjs/api": "^0.37.4"
+  },
+  "devDependencies": {
+    "@sapphire/prettier-config": "1.2.1"
+  }
 }

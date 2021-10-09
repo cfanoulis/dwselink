@@ -1,4 +1,3 @@
-import { Link, routes } from '@redwoodjs/router';
 import { MetaTags } from '@redwoodjs/web';
 import { useState, useEffect } from 'react';
 import { useInterval } from 'src/util/hooks/useInterval';
@@ -39,7 +38,7 @@ const NowStudyingPage = () => {
 			<footer className="align-end">
 				<span className="text-xs">
 					ΦΑΝΟΥΛΗΣ ΧΑΡΑΛΑΜΠΟΣ - Β4 - ΘΕΤΙΚΕΣ ΣΠΟΥΔΕΣ -{' '}
-					<a href="/logout" className="underline">
+					<a href="/logout" className="underline"> {/*This needs to become a Redwood link or a button*/}
 						Αποσυνδέσου ↗
 					</a>
 				</span>

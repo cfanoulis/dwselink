@@ -38,7 +38,8 @@ const NowStudyingPage = () => {
 			<footer className="align-end">
 				<span className="text-xs">
 					ΦΑΝΟΥΛΗΣ ΧΑΡΑΛΑΜΠΟΣ - Β4 - ΘΕΤΙΚΕΣ ΣΠΟΥΔΕΣ -{' '}
-					<a href="/logout" className="underline"> {/*This needs to become a Redwood link or a button*/}
+					<a href="/logout" className="underline">
+						{/*This needs to become a Redwood link or a button*/}
 						Αποσυνδέσου ↗
 					</a>
 				</span>

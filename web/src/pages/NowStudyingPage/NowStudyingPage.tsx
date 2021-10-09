@@ -27,7 +27,7 @@ const NowStudyingPage = () => {
 			<div className="flex-grow flex flex-col items-center justify-center">
 				<h5 className="text-base font-bold">ΤΩΡΑ ΕΧΕΙΣ:</h5>
 				<h1 className="font-techno text-4xl mt-4  underline hover:bg-blue-700 hover:text-white hover:no-underline p-2">
-					<a href="https://minedu-secondary2.webex.com/meet/tpalaio" target="calllinks">
+					<a href="https://minedu-secondary2.webex.com/meet/ohmygoddidijustdothat" target="calllinks">
 						ΝΕΟΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
 					</a>
 				</h1>

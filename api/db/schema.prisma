@@ -8,31 +8,33 @@ generator client {
   binaryTargets = "native"
 }
 
-model Class {
-  id        Int     @id @default(autoincrement())
-  teacher   Teacher @relation(fields: [teacherId], references: [id])
+model ScheduleItem {
+  id        Int       @id @default(autoincrement())
+  teacher   Teacher   @relation(fields: [teacherId], references: [id])
   teacherId Int
-  name      String
+  class     String
   day       Int
   start     Int
-  track      Classtype
+  track     Classtype
 
   @@map("classes")
 }
 
 model Teacher {
-  id      Int     @id @default(autoincrement())
+  id      Int    @id @default(autoincrement())
   name    String
   schname String
-  classes Class[]
 
   @@map("teachers")
+  ScheduleItem ScheduleItem[]
 }
 
 model User {
-  id        Int     @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   loginhash String
-  name      String
+  firstName String
+  lastName  String
+  alati     String
   track     Classtype
 
   @@map("authorized_users")

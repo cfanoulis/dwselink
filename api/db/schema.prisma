@@ -1,49 +1,50 @@
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
 }
 
 generator client {
-  provider      = "prisma-client-js"
-  binaryTargets = "native"
+    provider      = "prisma-client-js"
+    binaryTargets = "native"
 }
 
 model ScheduleItem {
-  id        Int       @id @default(autoincrement())
-  teacher   Teacher   @relation(fields: [teacherId], references: [id])
-  teacherId Int
-  class     String
-  day       Int
-  start     Int
-  track     Classtype
+    id        Int       @id @default(autoincrement())
+    teacher   Teacher   @relation(fields: [teacherId], references: [id])
+    teacherId Int
+    class     String
+    day       Int
+    period    Int
+    track     Classtype
 
-  @@map("classes")
+    @@unique([day, period], name: "One_Class_Per_Period")
+    @@map("classes")
 }
 
 model Teacher {
-  id      Int    @id @default(autoincrement())
-  name    String
-  schname String
+    id      Int    @id @default(autoincrement())
+    name    String
+    schname String @unique
 
-  @@map("teachers")
-  ScheduleItem ScheduleItem[]
+    ScheduleItem ScheduleItem[]
+    @@map("teachers")
 }
 
 model User {
-  id        Int       @id @default(autoincrement())
-  loginhash String
-  firstName String
-  lastName  String
-  alati     String
-  track     Classtype
+    id        Int       @id @default(autoincrement())
+    username  String    @unique
+    alati     String
+    loginhash String
+    name      String
+    track     Classtype
 
-  @@map("authorized_users")
+    @@map("authorized_users")
 }
 
 enum Classtype {
-  GENERAL
-  STEM
-  HUMANITIES
+    GENERAL
+    STEM
+    HUMANITIES
 
-  @@map("class_type")
+    @@map("class_type")
 }

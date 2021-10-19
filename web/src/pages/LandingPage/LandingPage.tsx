@@ -1,6 +1,10 @@
+import { useAuth } from '@redwoodjs/auth';
+import { Link, routes } from '@redwoodjs/router';
 import { MetaTags } from '@redwoodjs/web';
 
 const LandingPage = () => {
+	const { currentUser, isAuthenticated } = useAuth();
+
 	return (
 		<>
 			<MetaTags
@@ -15,8 +19,22 @@ const LandingPage = () => {
 					👋
 				</span>
 			</h1>
-			<p className="mt-2">Είμαι το dwse.link - το έξυπνο ημερολόγιο πρόγραμμα σου για το 3ο ΓΕ.Λ. Ευόσμου.</p>
-			<p>Δεν είμαι έτοιμο ακόμα - μείνε συντονισμένος για περισσότερες πληροφορίες</p>
+			<p className="m-2">Είμαι το dwse.link - το έξυπνο ημερολόγιο πρόγραμμα σου για το 3ο ΓΕ.Λ. Ευόσμου.</p>
+			{isAuthenticated && currentUser ? (
+				<>
+					<p>
+						Αν δεν κάνω λάθος, είσαι ο <strong>{currentUser.name}</strong> ({currentUser.username})
+					</p>
+					<br />
+					<Link to={routes.nowStudying()} className="underline">
+						Πάμε στο πρόγραμμα ↗
+					</Link>
+				</>
+			) : (
+				<>
+					<p>Δεν είμαι έτοιμο ακόμα - μείνε συντονισμένος για περισσότερες πληροφορίες</p>
+				</>
+			)}
 			<p className="text-xs mt-8">Ξέρεις από TypeScript και θές να βοηθήσεις;</p>
 			<br />
 			<p className="text-xs">

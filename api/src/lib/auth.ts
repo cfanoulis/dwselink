@@ -1,4 +1,4 @@
-import { AuthenticationError, ForbiddenError } from '@redwoodjs/graphql-server';
+import { AuthenticationError } from '@redwoodjs/graphql-server';
 import { db } from './db';
 
 // The session object sent in as the first arugment to getCurrentUser() will
@@ -25,35 +25,6 @@ export const isAuthenticated = () => {
 };
 
 /**
- * Checks if the currentUser is authenticated (and assigned one of the given roles)
- *
- * @param {string= | string[]=} roles - A single role or list of roles to check if the user belongs to
- *
- * @returns {boolean} - Returns true if the currentUser is logged in and assigned one of the given roles,
- * or when no roles are provided to check against. Otherwise returns false.
- */
-export const hasRole = ({ roles }) => {
-	if (!isAuthenticated()) {
-		return false;
-	}
-
-	if (roles) {
-		if (Array.isArray(roles)) {
-			return context.currentUser.roles?.some((r) => roles.includes(r));
-		}
-
-		if (typeof roles === 'string') {
-			return context.currentUser.roles?.includes(roles);
-		}
-
-		// roles not found
-		return false;
-	}
-
-	return true;
-};
-
-/**
  * Use requireAuth in your services to check that a user is logged in,
  * whether or not they are assigned a role, and optionally raise an
  * error if they're not.
@@ -67,12 +38,8 @@ export const hasRole = ({ roles }) => {
  *
  * @see https://github.com/redwoodjs/redwood/tree/main/packages/auth for examples
  */
-export const requireAuth = ({ roles } = {}) => {
+export const requireAuth = () => {
 	if (!isAuthenticated()) {
 		throw new AuthenticationError("You don't have permission to do that.");
-	}
-
-	if (!hasRole({ roles })) {
-		throw new ForbiddenError("You don't have access to do that.");
 	}
 };

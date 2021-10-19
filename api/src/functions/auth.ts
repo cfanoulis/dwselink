@@ -1,6 +1,13 @@
+import { Classtype, User } from '@prisma/client';
 import { DbAuthHandler } from '@redwoodjs/api';
 import { db } from 'src/lib/db';
+interface SignupHandlerContext {
+	username: string;
+	hashedPassword: string;
+	salt: string;
 
+	userAttributes: Omit<User, 'loginhash' | 'alati' | 'username'>;
+}
 export const handler = async (event, context) => {
 	const loginOptions = {
 		// login.handler() is called after finding the user that matches the
@@ -44,14 +51,14 @@ export const handler = async (event, context) => {
 		//
 		// If this returns anything else, it will be returned by the
 		// `signUp()` function in the form of: `{ message: 'String here' }`.
-		handler: ({ username, hashedPassword, salt, userAttributes }) => {
+		handler: ({ username, hashedPassword, salt }: SignupHandlerContext) => {
 			return db.user.create({
 				data: {
-					lastName: username,
+					username,
 					loginhash: hashedPassword,
 					alati: salt,
-					firstName: userAttributes.firstName,
-					track: userAttributes.track
+					name: 'ΟΝΟΜΑ',
+					track: Classtype.STEM
 				}
 			});
 		},
@@ -76,7 +83,7 @@ export const handler = async (event, context) => {
 		// something like `id` or `userId` or even `email`)
 		authFields: {
 			id: 'id',
-			username: 'lastName',
+			username: 'username',
 			hashedPassword: 'loginhash',
 			salt: 'alati'
 		},

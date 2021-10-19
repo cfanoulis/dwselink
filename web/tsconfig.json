@@ -10,11 +10,22 @@
 		"rootDirs": ["./src", "../.redwood/types/mirror/web/src"],
 		"paths": {
 			"src/*": ["./src/*", "../.redwood/types/mirror/web/src/*"],
-			"types/*": ["./types/*"]
+			"types/*": [".src/types/*"]
 		},
-		"typeRoots": ["../node_modules/@types", "./node_modules/@types"],
-		"types": ["jest"],
-		"jsx": "preserve"
+		"jsx": "preserve",
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "error",
+		"newLine": "lf",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"preserveConstEnums": true,
+		"strict": true,
+		"useDefineForClassFields": true
 	},
 	"include": ["src", "../.redwood/types/includes/all-*", "../.redwood/types/includes/web-*"]
 }

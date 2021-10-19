@@ -1,7 +1,8 @@
 # dwse.link
 
 Ημερολογιο πρόγραμμα - προαρμοσμένο σε μία τηλε-εκπαιδευτική πραγματικότητα
-Δηλαδή? Ενα ρολόι τάξης - πότε είναι το επόμενο μάθημα, ποιος είναι ο σύνδεσμος, σε πόση ώρα είνια αυτο το καταραμένο διάλειμμα!
+
+Δηλαδή? Ενα ρολόι τάξης - πότε είναι το επόμενο μάθημα, ποιος είναι ο σύνδεσμος, σε πόση ώρα είναι αυτο το καταραμένο διάλειμμα!
 
 ## Getting Started
 
@@ -23,4 +24,4 @@ yarn install
 yarn redwood dev
 ```
 
-Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
+Then, navigate to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.

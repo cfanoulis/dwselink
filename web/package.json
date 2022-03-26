@@ -22,7 +22,7 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@sapphire/prettier-config": "1.2.1",
+    "@sapphire/prettier-config": "1.4.1",
     "autoprefixer": "10.3.7",
     "postcss": "8.3.9",
     "postcss-loader": "6.1.1",

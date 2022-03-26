@@ -2468,6 +2468,21 @@
     pino-pretty "5.1.3"
     uuid "8.3.2"
 
+"@redwoodjs/api@0.37.5", "@redwoodjs/api@^0.37.4":
+  version "0.37.5"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.37.5.tgz#2138b5a90467ed05d726393fe2f35fcaa01bec29"
+  integrity sha512-JB6YIyD4hMDQTIsZ1u8CExBH74wrW3XfUMPfAdWwgH413KKYxAmTxyIAWwaGanA5Y0HCNQ46cRWro2VID6HOXw==
+  dependencies:
+    "@prisma/client" "2.30.3"
+    "@types/pino" "6.3.11"
+    core-js "3.17.3"
+    crypto-js "4.1.1"
+    jsonwebtoken "8.5.1"
+    jwks-rsa "2.0.4"
+    pino "6.13.2"
+    pino-pretty "5.1.3"
+    uuid "8.3.2"
+
 "@redwoodjs/auth@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.37.4.tgz#2318e000557db24666748f290e2bd4ae5826fc08"
@@ -2632,6 +2647,36 @@
     pino-pretty "5.1.3"
     uuid "8.3.2"
 
+"@redwoodjs/graphql-server@^0.37.4":
+  version "0.37.5"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/graphql-server/-/graphql-server-0.37.5.tgz#1dcb8aa3aad4f0e5363ef79c9db49b513e827aaf"
+  integrity sha512-kpuJNHttwDm9vth80yEzpUFWNoOrrjU9ErTIUiMsZV2lWqhAWcKdxuyvDlPlX0t75ehfUvPXXIbN1vqHFhxqxA==
+  dependencies:
+    "@envelop/core" "1.1.0"
+    "@envelop/depth-limit" "1.0.0"
+    "@envelop/disable-introspection" "1.0.0"
+    "@envelop/filter-operation-type" "1.0.0"
+    "@envelop/parser-cache" "1.0.0"
+    "@envelop/validation-cache" "1.0.0"
+    "@graphql-tools/merge" "8.1.2"
+    "@graphql-tools/schema" "8.2.0"
+    "@graphql-tools/utils" "8.2.2"
+    "@prisma/client" "2.30.3"
+    "@redwoodjs/api" "0.37.5"
+    "@types/pino" "6.3.11"
+    core-js "3.17.3"
+    graphql "15.5.3"
+    graphql-helix "1.7.0"
+    graphql-playground-html "1.6.29"
+    graphql-scalars "1.10.1"
+    graphql-tag "2.12.5"
+    lodash.merge "4.6.2"
+    lodash.omitby "4.6.0"
+    node-fetch "2.6.1"
+    pino "6.13.2"
+    pino-pretty "5.1.3"
+    uuid "8.3.2"
+
 "@redwoodjs/internal@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.37.4.tgz#a0ad66b29e7ec689991786936860c430ad2d1fb4"
@@ -2766,12 +2811,12 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sapphire/prettier-config@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.2.1.tgz#d03af5762683e4625fd1bfea5e62fa9bc2b369c8"
-  integrity sha512-cOky1BpKgByjRrBEXJJoJj6ZFww1GEB2f8OhqS554IgBVgXFnjmvTgYb1qwis2pDEYrzLevRkZKg+6r7fvyIxw==
+"@sapphire/prettier-config@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.4.1.tgz#a725b679982c9b1702d305d7cfffc0006b5a661a"
+  integrity sha512-zXdQZp0NuigzibBX4EBSnZVFLyZUuhqnUE+jhRiMfo8ICYr5+4eiNzIOapAYdnV+amO/JBo3y3VyLLpwjEqWUw==
   dependencies:
-    prettier "^2.4.1"
+    prettier "^2.6.0"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -13665,10 +13710,15 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.4.1, prettier@^2.2.1, prettier@^2.4.1:
+prettier@2.4.1, prettier@^2.2.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
   integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+
+prettier@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
+  integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
 
 prettier@~2.2.1:
   version "2.2.1"

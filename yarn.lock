@@ -2468,6 +2468,21 @@
     pino-pretty "5.1.3"
     uuid "8.3.2"
 
+"@redwoodjs/api@0.37.5", "@redwoodjs/api@^0.37.4":
+  version "0.37.5"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.37.5.tgz#2138b5a90467ed05d726393fe2f35fcaa01bec29"
+  integrity sha512-JB6YIyD4hMDQTIsZ1u8CExBH74wrW3XfUMPfAdWwgH413KKYxAmTxyIAWwaGanA5Y0HCNQ46cRWro2VID6HOXw==
+  dependencies:
+    "@prisma/client" "2.30.3"
+    "@types/pino" "6.3.11"
+    core-js "3.17.3"
+    crypto-js "4.1.1"
+    jsonwebtoken "8.5.1"
+    jwks-rsa "2.0.4"
+    pino "6.13.2"
+    pino-pretty "5.1.3"
+    uuid "8.3.2"
+
 "@redwoodjs/auth@0.37.4":
   version "0.37.4"
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.37.4.tgz#2318e000557db24666748f290e2bd4ae5826fc08"
@@ -2618,6 +2633,36 @@
     "@graphql-tools/utils" "8.2.2"
     "@prisma/client" "2.30.3"
     "@redwoodjs/api" "0.37.4"
+    "@types/pino" "6.3.11"
+    core-js "3.17.3"
+    graphql "15.5.3"
+    graphql-helix "1.7.0"
+    graphql-playground-html "1.6.29"
+    graphql-scalars "1.10.1"
+    graphql-tag "2.12.5"
+    lodash.merge "4.6.2"
+    lodash.omitby "4.6.0"
+    node-fetch "2.6.1"
+    pino "6.13.2"
+    pino-pretty "5.1.3"
+    uuid "8.3.2"
+
+"@redwoodjs/graphql-server@^0.37.4":
+  version "0.37.5"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/graphql-server/-/graphql-server-0.37.5.tgz#1dcb8aa3aad4f0e5363ef79c9db49b513e827aaf"
+  integrity sha512-kpuJNHttwDm9vth80yEzpUFWNoOrrjU9ErTIUiMsZV2lWqhAWcKdxuyvDlPlX0t75ehfUvPXXIbN1vqHFhxqxA==
+  dependencies:
+    "@envelop/core" "1.1.0"
+    "@envelop/depth-limit" "1.0.0"
+    "@envelop/disable-introspection" "1.0.0"
+    "@envelop/filter-operation-type" "1.0.0"
+    "@envelop/parser-cache" "1.0.0"
+    "@envelop/validation-cache" "1.0.0"
+    "@graphql-tools/merge" "8.1.2"
+    "@graphql-tools/schema" "8.2.0"
+    "@graphql-tools/utils" "8.2.2"
+    "@prisma/client" "2.30.3"
+    "@redwoodjs/api" "0.37.5"
     "@types/pino" "6.3.11"
     core-js "3.17.3"
     graphql "15.5.3"
@@ -12318,6 +12363,11 @@ nanoid@^3.1.28:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.29.tgz#214fb2d7a33e1a5bef4757b779dfaeb6a4e5aeb4"
   integrity sha512-dW2pUSGZ8ZnCFIlBIA31SV8huOGCHb6OwzVCc7A69rb/a+SgPBwfmLvK5TKQ3INPbRkcI8a/Owo0XbiTNH19wg==
 
+nanoid@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
+  integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
+
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -13155,6 +13205,11 @@ picocolors@^0.2.1:
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
   integrity sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==
 
+picocolors@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
+  integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
+
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
@@ -13626,14 +13681,14 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@8.3.9, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.3.5:
-  version "8.3.9"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.9.tgz#98754caa06c4ee9eb59cc48bd073bb6bd3437c31"
-  integrity sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw==
+postcss@8.4.12:
+  version "8.4.12"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.12.tgz#1e7de78733b28970fa4743f7da6f3763648b1905"
+  integrity sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==
   dependencies:
-    nanoid "^3.1.28"
-    picocolors "^0.2.1"
-    source-map-js "^0.6.2"
+    nanoid "^3.3.1"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
 
 postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.36, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.39"
@@ -13642,6 +13697,15 @@ postcss@^7.0.14, postcss@^7.0.26, postcss@^7.0.32, postcss@^7.0.36, postcss@^7.0
   dependencies:
     picocolors "^0.2.1"
     source-map "^0.6.1"
+
+postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.15, postcss@^8.3.5:
+  version "8.3.9"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.9.tgz#98754caa06c4ee9eb59cc48bd073bb6bd3437c31"
+  integrity sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw==
+  dependencies:
+    nanoid "^3.1.28"
+    picocolors "^0.2.1"
+    source-map-js "^0.6.2"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
@@ -15169,6 +15233,11 @@ source-map-js@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-0.6.2.tgz#0bb5de631b41cfbda6cfba8bd05a80efdfd2385e"
   integrity sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==
+
+source-map-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
+  integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
 source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
   version "0.5.3"

@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@redwoodjs/core": "0.37.4",
-    "@sapphire/prettier-config": "1.2.1"
+    "@sapphire/prettier-config": "1.4.1"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
